@@ -1,0 +1,9 @@
+Retrieval-Augmentation Generation (RAG) Architecture Overview
+
+RAG is an AI framework for improving the quality of LLM responses by grounding the model on external sources of knowledge.
+
+Key Components:
+1. Document Ingestion: Converting text into chunks and computing embedding vectors.
+2. Vector Store: Storing embeddings and metadata in vector databases like ChromaDB or FAISS.
+3. Similarity Search: Searching vector space using cosine distance or dot product to retrieve relevant chunks for a user query.
+4. Prompt Augmentation: Combining retrieved text chunks with the user's prompt before sending it to the Generative AI model (e.g. Gemini 1.5 Flash / Gemini 2.0).
